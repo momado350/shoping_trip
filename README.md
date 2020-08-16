@@ -9,3 +9,7 @@ B2 is our item price multiplied by our tax rate.
 =B2+C2
 3\ finaly we want the total amount paid, we create a column "Paid Total" and sum up our Price with Taxes column with this equation:
 =SUM(TaxPrice)
+
+# favoriteColors
+this a conditional check.
+we have a list of colors ["Red","Blue","Yellow","Green","Purple","Orange"] using Choose(Randbetween(1,6),"Red","Blue","Yellow","Green","Purple","Orange") function to choose colors reandomly, then we check numbers of colors by using COUNTIF for all colors, like num of red is assigned a conditional =COUNTIF(Colors,"Red") which will return number of red color in the list then check if they are above five by using =IF(C2>5,TRUE,FALSE) which will return boolian True if number above 5 and False if number is not above 5.
